@@ -1,0 +1,212 @@
+@font-face {
+	font-family: 'dessin';
+	src: url(font/CabinSketch-Regular.ttf);
+}
+@font-face {
+	font-family: 'dessin-gros';
+	src: url(font/CabinSketch-Bold.ttf);
+}
+html::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+html{
+    margin: 0;
+}
+h1{
+    font-family: 'dessin-gros';
+    font-size: 5em;
+    color: white;
+}
+body{
+    background: url(img/fond.jpg) center repeat-y;
+    background-size: cover;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    background-color: black;
+}
+#pendu{
+    margin-top: 10px;
+    text-align: center;
+}
+.touches{
+    background-color: rgb(41, 41, 41);
+    height: 59px;
+    width: 76px;
+    margin: 2px; 
+    color: rgb(247, 247, 247);
+    border-radius: 50%;
+    font-family: monospace;
+    font-size: 2.8em;
+    text-align: center;
+    transition: transform 0.3s;
+    border: white unset;
+    cursor: pointer;
+}
+.touches:hover{
+    transform: scale(0.80);
+}
+#boutton{
+    display: flex;
+    justify-content: space-between;
+}
+#reset button, #notice, #notice2,#reset2 button,#boutonSon{
+    font-size: 1.6em;
+    font-family: 'dessin-gros';
+    border: white dashed 1px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+#son{
+    fill:#ffffff;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(245, 245, 220, 0);
+}
+#boutonSon{
+    order: 2;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0);
+}
+#notice{
+    order: 1;
+}
+#regleSon{
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+#jeu{
+    font-weight: 800;
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'dessin-gros';
+    color: white;
+    margin: 0;
+    margin-bottom: 25px;
+}
+#zone{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+#clavier{
+    margin: auto;
+    width: 50%;
+}
+#score{
+    font-family: 'dessin-gros';
+    color: white;
+    font-size: 2em;
+}
+#aide{
+    display: none;
+    position: absolute;
+    left: 35px;
+    top: 45px;
+}
+#reset{
+    order: 2;
+}
+#reset2{
+    display: none;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#reset2 button{
+    font-size: 1em;
+}
+#soleil{
+    width : 30%;
+    margin: 50px;
+}
+fieldset, legend{
+    border: white dashed 1px;
+    border-radius: 20px;
+    font-weight: normal;
+    font-family: 'dessin-gros';
+    color: white;
+    background-image: url(img/fond.jpg);
+    background-position: center;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 300px;
+}
+fieldset{
+    width: 275px;
+    height: 175px;
+}
+span{
+    color: red;
+}
+
+@media all and (max-width: 1024px){
+    html::-webkit-scrollbar{
+        display: none;
+        scroll-behavior: smooth;
+    }
+    body{
+        min-width: 360px;
+    }
+    h1{
+        margin-top: 30px;
+        font-size: 3em;
+    }
+    #jeu, #clavier{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #zone{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #clavier{
+        width: 100%;
+    }
+    #score{
+        font-size: 1.5em;
+    }
+    #notice, #notice2, #score,#boutonSon{
+        font-size: 0.85em;
+        padding: 12px;
+    }
+    #reset button{
+        font-size: 0.85em;
+        padding: 16px;
+    }
+    #reset2 button{
+        font-size: 1em;
+        padding: 10px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #soleil{
+        width: 70%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #boutton{
+        margin: 6px;
+    }
+    legend, fieldset{
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 200px;
+        margin: 0;
+    }
+    #aide{
+        left: 10px;
+        top: 250px;
+    }
+}
